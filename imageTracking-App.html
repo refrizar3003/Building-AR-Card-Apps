@@ -1,0 +1,98 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.2.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: ./building.mind; maxTrack: 10" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-assets>
+        <!-- Card Images -->
+        <img id="bigbenCard" src="./marker/AR-card-image-tracking/big-ben.png"></img>
+        <img id="burjkhalifaCard" src="./marker/AR-card-image-tracking/burj-khalifa.png"></img>
+        <img id="empirestateCard" src="./marker/AR-card-image-tracking/empire-state-building.png"></img>
+        <img id="libertyCard" src="./marker/AR-card-image-tracking/statue-of-liberty.png"></img>
+        <img id="eiffelCard" src="./marker/AR-card-image-tracking/eiffel-tower.png"></img>
+        <img id="pisaCard" src="./marker/AR-card-image-tracking/tower-of-pisa.png"></img>
+        <img id="pyramidCard" src="./marker/AR-card-image-tracking/pyramid.png"></img>
+        <img id="one-wtcCard" src="./marker/AR-card-image-tracking/one-wtc.png"></img>
+        <img id="tokyo-towerCard" src="./marker/AR-card-image-tracking/tokyo-tower.png"></img>
+        <img id="windmillCard" src="./marker/AR-card-image-tracking/windmill.png"></img>
+
+        <!-- 3D Models -->
+        <a-asset-item id="bigbenModel" src="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/assets/big_ben/scene.gltf"></a-asset-item>
+        <a-asset-item id="burjkhalifaModel" src="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/assets/burj_khalifa/scene.gltf"></a-asset-item>
+        <a-asset-item id="empirestateModel" src="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/assets/empire_state/scene.gltf"></a-asset-item>
+        <a-asset-item id="libertyModel" src="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/assets/statue_liberty/scene.gltf"></a-asset-item>
+        <a-asset-item id="eiffelModel" src="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/assets/eiffel_tower/scene.gltf"></a-asset-item>
+        <a-asset-item id="pisaModel" src="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/assets/pisa_tower/scene.gltf"></a-asset-item>
+        <a-asset-item id="pyramidModel" src="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/assets/pyramid/scene.gltf"></a-asset-item>
+        <a-asset-item id="one-wtcModel" src="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/assets/one_wtc/scene.gltf"></a-asset-item>
+        <a-asset-item id="tokyo-towerModel" src="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/assets/tokyo_tower/scene.gltf"></a-asset-item>
+        <a-asset-item id="windmillModel" src="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/assets/windmill/scene.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-plane src="#bigbenCard" position="0 0 0" height="1.43" width="1" rotation="0 0 0">
+          <a-gltf-model rotation="90 0 0 " position="0 0.3 0" scale="0.1 0.1 0.1" src="#bigbenModel" animation-mixer>
+        </a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-plane src="#burjkhalifaCard" position="0 0 0" height="1.43" width="1" rotation="0 0 0">
+          <a-gltf-model rotation="90 0 0 " position="-0.2 0.3 0" scale="0.4 0.4 0.4" src="#burjkhalifaModel" animation-mixer>
+        </a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-plane src="#empirestateCard" position="0 0 0" height="1.43" width="1" rotation="0 0 0">
+          <a-gltf-model rotation="90 0 0 " position="0 0.3 0" scale="0.0001 0.0001 0.0001" src="#empirestateModel" animation-mixer>
+        </a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-plane src="#libertyCard" position="0 0 0" height="1.43" width="1" rotation="0 0 0">
+          <a-gltf-model rotation="90 0 0 " position="0 0.3 0" scale="0.015 0.015 0.015" src="#libertyModel" animation-mixer>
+        </a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 4">
+        <a-plane src="#eiffelCard" position="0 0 0" height="1.43" width="1" rotation="0 0 0">
+          <a-gltf-model rotation="90 0 0 " position="0 0.3 0" scale="0.08 0.08 0.08" src="#eiffelModel" animation-mixer>
+        </a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 5">
+        <a-plane src="#pisaCard" position="0 0 0" height="1.43" width="1" rotation="0 0 0">
+          <a-gltf-model rotation="90 0 0 " position="0 0.3 0" scale="0.007 0.007 0.007" src="#pisaModel" animation-mixer>
+        </a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 6">
+        <a-plane src="#pyramidCard" position="0 0 0" height="1.43" width="1" rotation="0 0 0">
+          <a-gltf-model rotation="90 0 0 " position="0 0.3 0" scale="0.05 0.05 0.05" src="#pyramidModel" animation-mixer>
+        </a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 7">
+        <a-plane src="#one-wtcCard" position="0 0 0" height="1.43" width="1" rotation="0 0 0">
+          <a-gltf-model rotation="90 0 0 " position="0 0.3 0" scale="0.25 0.25 0.25" src="#one-wtcModel" animation-mixer>
+        </a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 8">
+        <a-plane src="#tokyo-towerCard" position="0 0 0" height="1.43" width="1" rotation="0 0 0">
+          <a-gltf-model rotation="90 0 0 " position="0 0.35 0" scale="0.004 0.004 0.004" src="#tokyo-towerModel" animation-mixer>
+        </a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 9">
+        <a-plane src="#windmillCard" position="0 0 0" height="1.43" width="1" rotation="0 0 0">
+          <a-gltf-model rotation="90 0 0 " position="0 0.38 0" scale="14.0 14.0 14.0" src="#windmillModel" animation-mixer>
+        </a-plane>
+      </a-entity>
+    </a-scene>
+    <!-- Elemen UI di luar a-scene -->
+    <div class="title">Arahkan kamera ke kartu</div>
+    <a href="./page-app/dashboard.html" class="back-btn">Back</a>
+    <img src="./assets/image/logo.png" alt="Logo" class="picture-logo">
+    <div id="UI">Marker information here.</div>
+  </body>
+</html>

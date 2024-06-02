@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+
+</head>
+<body>
+    <div id="splash">
+        <img class="logo" src="../assets/image/logo.png" alt="Logo">
+    </div>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = 'dashboard.html';
+            document.getElementById('splash').classList.toggle('fade'); }, 3000);
+    </script>
+</body>
+</html>
