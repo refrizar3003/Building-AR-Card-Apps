@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Building AR Card Apps</title>
 
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/styles/styles.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link 
@@ -19,32 +21,33 @@
       <div class="header">
         <h1>Building AR Card</h1>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="dashboard.html">Dashboard</a>
-          </li>
-          <li>
-            <a href="guide.html">Guide</a>
-          </li>
-          <li>
-            <a href="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/marker/building-ar-tracking-cards[Download].pdf">Marker</a>
-          </li>
-          <li>
-            <a href="../imageTracking-App.html">AR Scan</a>
-          </li>
-          <li>
-            <a href="developer.html">Developer</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Menu</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="guide.html">Guide</a></li>
+              <li><a href="https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/marker/building-ar-tracking-cards[Download].pdf">Marker</a></li>
+              <li><a href="../imageTracking-App.html">AR Scanner</a></li>
+              <li><a href="developer.html">Developer</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
       <div id="content">
+        <h2>Koleksi Kartu</h2>
         <article id="Building" class="card">
           <h2>Gedung Pencakar langit</h2>
           <!-- <p>
@@ -52,13 +55,13 @@
           </p> -->
           <section>
             <h3>Burj Khalifa</h3>
-            <img src="" alt="Burj Khalifa" class="featured-image" />
+            <img src="../marker/AR-card-image-tracking/burj-khalifa.png" alt="Burj Khalifa" class="featured-image" />
           </section>
           <h3>Empire State Building</h3>
-            <img src="" alt="Empire State Building" class="featured-image" />
+            <img src="../marker/AR-card-image-tracking/empire-state-building.png" alt="Empire State Building" class="featured-image" />
           </section>
           <h3>One World Trade Center</h3>
-            <img src="" alt="One World Trade Center" class="featured-image" />
+            <img src="../marker/AR-card-image-tracking/one-wtc.png" alt="One World Trade Center" class="featured-image" />
           </section>
 
       </article>
@@ -66,15 +69,15 @@
         <h2>Bangunan Bersejarah</h2>
         <section>
           <h3>Big Ben</h3>
-          <img src="" alt="Big Ben" class="featured-image" />
+          <img src="../marker/AR-card-image-tracking/big-ben.png" alt="Big Ben" class="featured-image" />
         </section>
         <section>
           <h3>Piramida</h3>
-          <img src="" alt="Pyramida" class="featured-image" />
+          <img src="../marker/AR-card-image-tracking/pyramid.png" alt="Pyramida" class="featured-image" />
         </section>
         <section>
           <h3>Menara Miring Pisa</h3>
-          <img src="" alt="Menara Miring Pisa" class="featured-image" />
+          <img src="../marker/AR-card-image-tracking/tower-of-pisa.png" alt="Menara Miring Pisa" class="featured-image" />
         </section>
       </article>
 
@@ -85,22 +88,22 @@
         </p> -->
         <section>
           <h3>Menara Eiffel</h3>
-          <img src="" alt="Eiffel Tower" class="featured-image" />
+          <img src="../marker/AR-card-image-tracking/eiffel-tower.png" alt="Eiffel Tower" class="featured-image" />
         </section>
 
         <section>
           <h3>Menara Tokyo</h3>
-          <img src="" alt="Tokyo Tower" class="featured-image" />
+          <img src="../marker/AR-card-image-tracking/tokyo-tower.png" alt="Tokyo Tower" class="featured-image" />
         </section>
         
         <section>
           <h3>Patung Liberty</h3>
-          <img src="" alt="Patung Liberty" class="featured-image" />
+          <img src="../marker/AR-card-image-tracking/statue-of-liberty.png" alt="Patung Liberty" class="featured-image" />
         </section>
 
         <section>
           <h3>Kincir Angin</h3>
-          <img src="" alt="Windmill" class="featured-image" />
+          <img src="../marker/AR-card-image-tracking/windmill.png" alt="Windmill" class="featured-image" />
         </section>
       </article>
     </div>
@@ -108,5 +111,8 @@
     <footer>  
       <p>Belajar Augmented Reality &#169; 2024, Refrizar Dwiardito</p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>
 </html>
