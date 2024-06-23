@@ -11,5 +11,6 @@ Aplikasi ini memberikan pengalaman yang edukatif dan menghibur, memungkinkan pen
 ## [Link Marker](https://cdn.jsdelivr.net/gh/refrizar3003/Belajar-Augmented-Reality@latest/marker/building-ar-tracking-cards[Download].pdf)
 
 # QR Code Aplikasi
+![Bacode Demo](https://cdn.jsdelivr.net/gh/refrizar3003/Building-AR-Card-Apps/marker/QR%20code%20demo%20apps.png)
 
 
